@@ -1,0 +1,84 @@
+
+/* Objectives 4, 4.2, 6.2 */
+
+/* Objective 4.1 */
+
+.header{
+    padding: 1px;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    font: size 5px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center
+}
+
+.footer{
+    position: fixed;
+    padding: 1px;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    font: size 5px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Objective 3.1 */
+.navbar{
+    overflow: hidden;
+    padding: 20px;
+    background-color:rgb(100,100,100);
+    color:white;
+    font: size 20px;
+    font-family:'Times New Roman', Times, serif;
+
+    }
+
+.navbar a {
+    float: left;
+    color:white;
+    padding:20px 40px;
+    }
+
+.navbar .right {
+    float: right;
+    }
+    
+.navbar .left {
+    float: left;
+    }    
+
+.navbar .center {
+    float: center;
+    }   
+
+.navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+      }
+
+body{
+    color:rgb(100, 100, 100);
+    text-align: center;
+    background-color:white;
+    font-family:sans-serif;}
+
+p{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;}
+h2{color: black;
+}
+
+h1{
+    text-decoration-line: underline;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}

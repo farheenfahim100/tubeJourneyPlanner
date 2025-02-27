@@ -1,0 +1,234 @@
+<html> <!-- Root element -->
+<head> <!-- Head element for metadata of the webpage -->
+<title> <!-- Title element -->
+	A Journey Planner <!-- Defines the title of the webpage --> 
+</title> <!-- Closes title element -->
+
+ <link rel="stylesheet" type="text/css" href="styles.css"> <!-- References styling document called "styles.css" -->
+ <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Changes the view of the webpage for the user so that it matches the width of the page and initial zoom level  -->
+</head> <!-- Closes head element for metadata of the webpage -->
+
+<div class="navbar"> <!-- Defines the navbar section of the webpage -->
+	<a href="/journeyplanner.html"class="left">Journey Planner</a> <!-- Creates the first part of the navbar which is the Journey Planner page - includes the link to get to that webpage -->
+	<a href="/map.html"class="center">Map</a> <!-- Creates the second part of the navbar which is the Map page - includes the link to get to that webpage -->
+	<a href="/updates.html"class="center">Status Updates</a> <!-- Creates the third part of the navbar which is the Status Updates page - includes the link to get to that webpage -->
+	<a href="/arrivaltimes.html">Arrival Times</a> <!-- Creates the fourth part of the navbar which is the Arrival Times page - includes the link to get to that webpage -->
+	<a href="/liftupdates.html">Lift Updates</a> <!-- Creates the fifth part of the navbar which is the Lift Updates page - includes the link to get to that webpage -->
+	<a href="/index.html"class="right">About</a> <!-- Creates the last part of the navbar which is the About page - includes the link to get to that webpage -->
+  </div> <!-- Closing tag for defining the navbar section of the webpage -->
+
+<div class="header"> <!-- Defines the header section of the webpage -->
+   <h3>Tube Journey Planner</h3> <!-- Defines a heading -->
+   <h3>Farheen Fahim</h3> <!-- Defines a heading -->
+</div> <!-- Closing tag for defining the header section of the webpage -->
+
+<body> <!-- Defines the body of the webpage -->
+
+<h1>JOURNEY PLANNER</h1> <!-- Defines a heading -->
+
+<p> <!-- Defines a new paragraph -->
+ <form method="POST" action="/cgi-bin/journeyplanner.pyw"> <!-- Defines the form which the user needs to input values into and submit, also defines the action for when the form is submitted -->
+
+<!-- Objectives 1.1, 4.3,  -->
+Start Station:
+<!-- Defines a select element which allows the user to choose an input from a pre-determined selection of values -->
+<!-- Defines option tags which give the user options for their input -->
+<select name="station1"> 
+	<option value="Start Station">Start Station</option>
+	<option value="Aldgate">Aldgate</option>
+	<option value="Aldgate East">Aldgate East (Step-Free)</option>
+	<option value="Angel">Angel</option>
+	<option value="Baker Street">Baker Street (Step-Free)</option>
+	<option value="Bank">Bank</option>
+	<option value="Barbican">Barbican (Step-Free)</option>
+	<option value="Battersea Power Station">Battersea Power Station (Step-Free)</option>
+	<option value="Bayswater">Bayswater</option>
+	<option value="Blackfriars">Blackfriars (Step-Free)</option>
+	<option value="Bond Street">Bond Street (Step-Free)</option>
+	<option value="Borough">Borough (Step-Free)</option>
+	<option value="Cannon Street">Cannon Street (Step-Free)</option>
+	<option value="Chancery Lane">Chancery Lane</option>
+	<option value="Charing Cross">Charing Cross</option>
+	<option value="Covent Garden">Covent Garden</option>
+	<option value="Earl's Court">Earl's Court (Step-Free)</option>
+	<option value="Edgware Road">Edgware Road (Step-Free)</option>
+	<option value="Elephant & Castle">Elephant & Castle (Step-Free)</option>	
+	<option value="Embankment">Embankment</option>
+	<option value="Euston">Euston (Step-Free)</option>
+	<option value="Euston Square">Euston Square (Step-Free)</option>
+	<option value="Farringdon">Farringdon (Step-Free)</option>
+	<option value="Gloucester Road">Gloucester Road</option>
+	<option value="Goodge Street">Goodge Street</option>
+	<option value="Great Portland Street">Great Portland Street</option>
+	<option value="Green Park">Green Park (Step-Free)</option>
+	<option value="High Street Kensington">High Street Kensington</option>
+	<option value="Holborn">Holborn</option>
+	<option value="Hyde Park Corner">Hyde Park Corner</option>
+	<option value="Kennington">Kennington (Step-Free)</option>
+	<option value="King's Cross St. Pancras">King's Cross St. Pancras (Step-Free)</option>
+	<option value="Knightsbridge">Knightsbridge</option>
+	<option value="Lambeth North">Lambeth North</option>
+	<option value="Lancaster Gate">Lancaster Gate</option>
+	<option value="Leicester Square">Leicester Square</option>
+	<option value="Liverpool Street">Liverpool Street (Step-Free)</option>
+	<option value="London Bridge">London Bridge (Step-Free)</option>
+	<option value="Mansion House">Mansion House</option>
+	<option value="Marble Arch">Marble Arch</option>
+	<option value="Marylebone">Marylebone</option>
+	<option value="Moorgate">Moorgate (Step-Free)</option>
+	<option value="Monument">Monument</option>
+	<option value="Nine Elms">Nine Elms (Step-Free)</option>
+	<option value="Notting Hill Gate">Notting Hill Gate</option>
+	<option value="Old Street">Old Street</option>
+	<option value="Oxford Circus">Oxford Circus (Step-Free)</option>
+	<option value="Paddington">Paddington (Step-Free)</option>
+	<option value="Piccadilly Circus">Piccadilly Circus</option>
+	<option value="Pimlico">Pimlico</option>
+	<option value="Queensway">Queensway</option>
+	<option value="Regent's Park">Regent's Park</option>
+	<option value="Russell Square">Russell Square</option>
+	<option value="Sloane Square">Sloane Square</option>
+	<option value="South Kensington">South Kensington (Step-Free)</option>
+	<option value="Southwark">Southwark (Step-Free)</option>
+	<option value="St. James's Park">St. James's Park</option>
+	<option value="St. Paul's">St. Paul's</option>
+	<option value="Temple">Temple</option>
+	<option value="Tottenham Court Road">Tottenham Court Road (Step-Free)</option>
+	<option value="Tower Hill">Tower Hill (Step-Free)</option>
+	<option value="Vauxhall">Vauxhall (Step-Free)</option>
+	<option value="Victoria">Victoria (Step-Free)</option>
+	<option value="Warren Street">Warren Street</option>
+	<option value="Waterloo">Waterloo (Step-Free)</option>
+	<option value="Westminster">Westminster (Step-Free)</option>
+    </select> <!-- Closing tag for the select element -->
+    <br> <!-- Defines a line break on the webpage -->
+    <br> <!-- Defines a line break on the webpage -->
+
+
+End Station:
+<select name="station2"> <!-- Defines a select element which allows the user to choose an input from a pre-determined selection of values -->
+	<!-- Defines option tags which give the user options for their input -->
+	<option value="Start Station">Start Station</option>
+	<option value="Aldgate">Aldgate</option>
+	<option value="Aldgate East">Aldgate East (Step-Free)</option>
+	<option value="Angel">Angel</option>
+	<option value="Baker Street">Baker Street (Step-Free)</option>
+	<option value="Bank">Bank</option>
+	<option value="Barbican">Barbican (Step-Free)</option>
+	<option value="Battersea Power Station">Battersea Power Station (Step-Free)</option>
+	<option value="Bayswater">Bayswater</option>
+	<option value="Blackfriars">Blackfriars (Step-Free)</option>
+	<option value="Bond Street">Bond Street (Step-Free)</option>
+	<option value="Borough">Borough (Step-Free)</option>
+	<option value="Cannon Street">Cannon Street (Step-Free)</option>
+	<option value="Chancery Lane">Chancery Lane</option>
+	<option value="Charing Cross">Charing Cross</option>
+	<option value="Covent Garden">Covent Garden</option>
+	<option value="Earl's Court">Earl's Court (Step-Free)</option>
+	<option value="Edgware Road">Edgware Road (Step-Free)</option>
+	<option value="Elephant & Castle">Elephant & Castle (Step-Free)</option>	
+	<option value="Embankment">Embankment</option>
+	<option value="Euston">Euston (Step-Free)</option>
+	<option value="Euston Square">Euston Square (Step-Free)</option>
+	<option value="Farringdon">Farringdon (Step-Free)</option>
+	<option value="Gloucester Road">Gloucester Road</option>
+	<option value="Goodge Street">Goodge Street</option>
+	<option value="Great Portland Street">Great Portland Street</option>
+	<option value="Green Park">Green Park (Step-Free)</option>
+	<option value="High Street Kensington">High Street Kensington</option>
+	<option value="Holborn">Holborn</option>
+	<option value="Hyde Park Corner">Hyde Park Corner</option>
+	<option value="Kennington">Kennington (Step-Free)</option>
+	<option value="King's Cross St. Pancras">King's Cross St. Pancras (Step-Free)option>
+	<option value="Knightsbridge">Knightsbridge</option>
+	<option value="Lambeth North">Lambeth North</option>
+	<option value="Lancaster Gate">Lancaster Gate</option>
+	<option value="Leicester Square">Leicester Square</option>
+	<option value="Liverpool Street">Liverpool Street (Step-Free)</option>
+	<option value="London Bridge">London Bridge (Step-Free)</option>
+	<option value="Mansion House">Mansion House</option>
+	<option value="Marble Arch">Marble Arch</option>
+	<option value="Marylebone">Marylebone</option>
+	<option value="Moorgate">Moorgate (Step-Free)</option>
+	<option value="Monument">Monument</option>
+	<option value="Nine Elms">Nine Elms (Step-Free)</option>
+	<option value="Notting Hill Gate">Notting Hill Gate</option>
+	<option value="Old Street">Old Street</option>
+	<option value="Oxford Circus">Oxford Circus (Step-Free)</option>
+	<option value="Paddington">Paddington (Step-Free)</option>
+	<option value="Piccadilly Circus">Piccadilly Circus</option>
+	<option value="Pimlico">Pimlico</option>
+	<option value="Queensway">Queensway</option>
+	<option value="Regent's Park">Regent's Park</option>
+	<option value="Russell Square">Russell Square</option>
+	<option value="Sloane Square">Sloane Square</option>
+	<option value="South Kensington">South Kensington (Step-Free)</option>
+	<option value="Southwark">Southwark (Step-Free)</option>
+	<option value="St. James's Park">St. James's Park</option>
+	<option value="St. Paul's">St. Paul's</option>
+	<option value="Temple">Temple</option>
+	<option value="Tottenham Court Road">Tottenham Court Road (Step-Free)</option>
+	<option value="Tower Hill">Tower Hill (Step-Free)</option>
+	<option value="Vauxhall">Vauxhall (Step-Free)</option>
+	<option value="Victoria">Victoria (Step-Free)</option>
+	<option value="Warren Street">Warren Street</option>
+	<option value="Waterloo">Waterloo (Step-Free)</option>
+	<option value="Westminster">Westminster (Step-Free)</option>
+    </select> <!-- Closing tag for the select element -->
+    <br> <!-- Defines a line break on the webpage -->
+    <br> <!-- Defines a line break on the webpage -->
+
+
+<!-- Objective 5: -->
+ Rush Hour?
+
+ <select name="rush_hour"> <!-- Defines a select element which allows the user to choose an input from a pre-determined selection of values -->
+	<!-- Defines option tags which give the user options for their input -->
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+    </select> <!-- Closing tag for the select element -->
+    <br> <!-- Defines a line break on the webpage -->
+    <br> <!-- Defines a line break on the webpage -->
+
+ Weekend?
+   
+ <select name="weekend"> <!-- Defines a select element which allows the user to choose an input from a pre-determined selection of values -->
+	<!-- Defines option tags which give the user options for their input -->
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+    </select> <!-- Closing tag for the select element -->
+    <br> <!-- Defines a line break on the webpage -->
+    <br> <!-- Defines a line break on the webpage -->
+
+<!-- Objective 7.1: -->
+Step Free?
+<select name="stepfree"> <!-- Defines a select element which allows the user to choose an input from a pre-determined selection of values -->
+	<!-- Defines option tags which give the user options for their input -->
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+    </select> <!-- Closing tag for the select element -->
+    <br> <!-- Defines a line break on the webpage -->
+    <br> <!-- Defines a line break on the webpage -->
+
+
+<input type="submit" value="Find Route"> <!-- Defines an input tag which involves the user pressing and making the form submit -->
+</form> <!-- Closes the tag defining the form which the user needs to input values into and submit -->
+</p> <!-- Closing tag for defining a new paragraph -->
+ 
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+<br> <!-- Defines a line break on the webpage -->
+
+<div class="footer"> <!-- Defines the footer section of the webpage -->
+   <h3>Computer Science: Non-Exam Assessment</h3> <!-- Defines a heading -->
+   <h3>2022/23</h3> <!-- Defines a heading -->
+</div> <!-- Closing tag for defining the footer section of the webpage -->
+
+</body> <!-- Closing tag for defining the body of the webpage -->
+
+</html><!-- Closing tag for root element -->
